@@ -1,0 +1,1076 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 196, 4);
+}
+
+.logo img{
+    height: 50px;
+    margin-left: 15px;
+}
+
+.navegacion{
+    display: flex;
+    gap: 15px;
+    margin-right: 18px;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.seccion-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenido-inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+    height: 90%;
+}
+
+.imagen-inicio img{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.contenido-inicio h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    margin-left: 200px;
+}
+
+.contenido-inicio p{
+    font-size: 1.2em;
+    color: #333;
+    width: 40%;
+    margin-left: 200px;
+    font-weight: bolder;
+}
+
+.contenido-inicio .boton-accion{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    margin-left: 200px;
+    width: 20%;
+}
+
+.seccion-estadisticas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(208, 218, 218);
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 200px;
+    min-height: 500px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -100px;
+    border-radius: 5px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.contenido-estadisticas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenido-estadisticas h2{
+    font-size: 3.5em;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 60%;
+}
+
+.contenido-estadisticas p{
+    font-size: 1em;
+    color: #333;
+    width: 45%;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+
+.contenido-estadisticas .boton-leer-mas{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.graficos-estadisticas{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.seccion-ayuda{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 196, 4);
+    justify-content: space-between;
+    margin-top: 0;
+    min-height: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.contenido-ayuda{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 160px;
+    margin-top: 200px;
+}
+
+.contenido-ayuda h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.contenido-ayuda p{
+    font-size: 1em;
+    color: #333;
+    width: 55%;
+    font-weight: bolder;
+}
+
+.contenido-ayuda .boton-leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 35%;
+}
+
+.imagen-ayuda{
+    margin-right: 400px;
+}
+
+.imagen-ayuda img{
+    width: 160%;
+    height: auto;
+    margin-top: 350px;
+}
+
+.seccion-porcentaje {
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-porcentaje {
+    background-color: rgb(208, 218, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.imagen-porcentaje img{
+    height: 90%;
+}
+
+.contenido-porcentaje{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.contenido-porcentaje h2{
+    font-size: 3.5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.contenido-porcentaje p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.contenido-porcentaje .boton-leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 63%;
+}
+
+.contenido-porcentaje img{
+    width: 50%;
+    height: auto;
+}
+
+.seccion-nosotros{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+    min-height: 950px;
+}
+
+.seccion-nosotros h2{
+    margin-top: 20px;
+    font-size: 5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.seccion-nosotros p{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.seccion-nosotros img{
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.seccion-nosotros .boton-leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.seccion-equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    text-align: left;
+    min-height: 950px;
+    padding: 0 100px;
+    margin-left: 80px;
+}
+
+.imagen-equipo img {
+    width: 500px;
+    height: auto;
+    margin-left: 0;
+}
+
+.contenido-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 0;
+}
+
+.contenido-equipo h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.contenido-equipo p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.contenido-equipo .boton-leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+.seccion-prueba{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: rgb(208, 218, 218);
+    min-height: 750px;
+}
+
+.contenido-prueba{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 80px;
+}
+
+.contenido-prueba h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.contenido-prueba p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.contenido-prueba .boton-leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+.seccion-boletin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario-boletin {
+    width: 70%;
+    max-width: 800px;
+    background-color: #000;
+    color: #fff;
+    padding: 60px;
+    border-radius: 2px;
+    margin-left: 90px;
+}
+
+.formulario-boletin h3{
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.formulario-boletin h3, .formulario-boletin input,
+.formulario-boletin textarea{
+    margin-left: 40px;
+}
+
+.formulario-boletin input,
+.formulario-boletin textarea {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: #000;
+    color: white;
+    outline: none;
+}
+
+.formulario-boletin input:focus,
+.formulario-boletin textarea:focus {
+    border-color: rgb(255, 196, 4); 
+    box-shadow: 0 0 5px rgb(255, 196, 4);
+}
+
+.campos-nombre-apellido{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.grupo-campo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenido-boletin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 80px;
+}
+
+.contenido-boletin h2{
+    font-size: 5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.contenido-boletin p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.contenido-boletin .boton-suscribir{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+.seccion-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(255, 196, 4);
+    align-items: center;
+    text-align: center;
+    min-height: 700px;
+}
+
+.seccion-contacto h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.seccion-contacto p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.seccion-contacto img{
+    width: 70%;
+    height: auto;
+}
+
+.seccion-contacto .boton-contacto{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 15%;
+    margin-top: 20px;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #000;
+}
+
+hr{
+    width: 90%;
+    color: #fff;
+    margin-left: 60px;
+}
+
+.enlaces-pie{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.enlaces-principales, .enlaces-secundarios{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.enlaces-principales a, .enlaces-secundarios a{
+    color: rgb(255, 196, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pie-inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.derechos-autor p{
+    font-size: 1em;
+    color: rgb(255, 196, 4);
+    font-weight: bold;
+}
+
+.enlaces-sociales{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 180px;
+}
+
+.boton-accion, .boton-leer-mas, .boton-suscribir, .boton-contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .seccion-inicio,
+    .seccion-ayuda,
+    .seccion-equipo,
+    .seccion-prueba,
+    .seccion-boletin {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2,
+    .contenido-boletin h2,
+    .seccion-nosotros h2,
+    .seccion-contacto h2 {
+        font-size: 3.5em !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .contenido-inicio p,
+    .contenido-ayuda p,
+    .contenido-equipo p,
+    .contenido-prueba p,
+    .contenido-boletin p,
+    .contenido-estadisticas p,
+    .contenido-porcentaje p {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .imagen-inicio img {
+        width: 300px !important;
+        margin-left: 0 !important;
+    }
+
+    .seccion-estadisticas {
+        width: 90% !important;
+        margin-left: 5% !important;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .graficos-estadisticas {
+        flex-direction: column;
+        gap: 30px !important;
+    }
+
+    .imagen-ayuda {
+        margin-right: 0 !important;
+    }
+
+    .imagen-ayuda img {
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+
+    .seccion-porcentaje {
+        flex-direction: column;
+        width: 90% !important;
+    }
+
+    .imagen-porcentaje img {
+        height: auto !important;
+        width: 80% !important;
+    }
+
+    .seccion-equipo {
+        margin-left: 0 !important;
+        padding: 0 20px !important;
+    }
+
+    .imagen-equipo img {
+        width: 400px !important;
+    }
+
+    .formulario-boletin {
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
+
+    .campos-nombre-apellido {
+        flex-direction: column;
+    }
+
+    .grupo-campo {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navegacion {
+        margin-top: 15px;
+        margin-right: 0 !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2,
+    .contenido-boletin h2,
+    .seccion-nosotros h2,
+    .seccion-contacto h2 {
+        font-size: 2.8em !important;
+    }
+
+    .contenido-inicio p,
+    .contenido-ayuda p,
+    .contenido-equipo p,
+    .contenido-prueba p,
+    .contenido-boletin p {
+        font-size: 1em !important;
+        width: 90% !important;
+    }
+
+    .contenido-inicio .boton-accion,
+    .contenido-ayuda .boton-leer-mas,
+    .contenido-equipo .boton-leer-mas,
+    .contenido-prueba .boton-leer-mas,
+    .contenido-boletin .boton-suscribir,
+    .seccion-nosotros .boton-leer-mas,
+    .seccion-contacto .boton-contacto {
+        width: 50% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .seccion-estadisticas {
+        margin-bottom: -50px !important;
+    }
+
+    .contenido-estadisticas h2 {
+        font-size: 2.5em !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .contenido-estadisticas p {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+    }
+
+    .contenido-estadisticas .boton-leer-mas {
+        margin-left: 0 !important;
+        text-align: center;
+        display: block;
+    }
+
+    .contenido-ayuda {
+        margin-left: 0 !important;
+        margin-top: 100px !important;
+        align-items: center;
+    }
+
+    .contenido-porcentaje {
+        margin-left: 0 !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenido-porcentaje .boton-leer-mas {
+        width: 80% !important;
+    }
+
+    .imagen-equipo img {
+        width: 300px !important;
+    }
+
+    .seccion-nosotros img,
+    .seccion-contacto img {
+        width: 90% !important;
+    }
+
+    .enlaces-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces-principales,
+    .enlaces-secundarios {
+        margin-left: 0 !important;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2,
+    .contenido-boletin h2,
+    .seccion-nosotros h2,
+    .seccion-contacto h2 {
+        font-size: 2.2em !important;
+    }
+
+    .contenido-inicio p,
+    .contenido-ayuda p,
+    .contenido-equipo p,
+    .contenido-prueba p,
+    .contenido-boletin p {
+        font-size: 0.9em !important;
+        width: 95% !important;
+    }
+
+    .imagen-inicio img {
+        width: 250px !important;
+    }
+
+    .seccion-estadisticas {
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        padding: 20px;
+    }
+
+    .contenido-estadisticas h2 {
+        font-size: 2em !important;
+    }
+
+    .imagen-ayuda img {
+        margin-top: 30px !important;
+    }
+
+    .contenido-porcentaje h2 {
+        font-size: 2.5em !important;
+    }
+
+    .imagen-equipo img {
+        width: 250px !important;
+    }
+
+    .formulario-boletin {
+        padding: 30px !important;
+    }
+
+    .formulario-boletin input,
+    .formulario-boletin textarea {
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
+
+    .formulario-boletin h3 {
+        margin-left: 0 !important;
+    }
+
+    .seccion-contacto .boton-contacto {
+        width: 40% !important;
+    }
+
+    .pie-inferior {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .enlaces-sociales {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 40px !important;
+    }
+
+    .navegacion {
+        gap: 10px;
+    }
+
+    .navegacion a {
+        font-size: 0.9em;
+    }
+
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2,
+    .contenido-boletin h2,
+    .seccion-nosotros h2,
+    .seccion-contacto h2 {
+        font-size: 1.8em !important;
+    }
+
+    .contenido-inicio p,
+    .contenido-ayuda p,
+    .contenido-equipo p,
+    .contenido-prueba p,
+    .contenido-boletin p {
+        font-size: 0.85em !important;
+    }
+
+    .contenido-inicio .boton-accion,
+    .contenido-ayuda .boton-leer-mas,
+    .contenido-equipo .boton-leer-mas,
+    .contenido-prueba .boton-leer-mas,
+    .contenido-boletin .boton-suscribir,
+    .seccion-nosotros .boton-leer-mas,
+    .seccion-contacto .boton-contacto {
+        width: 70% !important;
+        padding: 8px 16px !important;
+        font-size: 0.9em;
+    }
+
+    .imagen-inicio img {
+        width: 200px !important;
+    }
+
+    .seccion-estadisticas {
+        min-height: 400px !important;
+        margin-bottom: -30px !important;
+    }
+
+    .graficos-estadisticas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .seccion-ayuda,
+    .seccion-porcentaje,
+    .seccion-nosotros,
+    .seccion-equipo,
+    .seccion-prueba {
+        min-height: auto !important;
+        padding: 40px 0;
+    }
+
+    .contenido-ayuda {
+        margin-top: 50px !important;
+    }
+
+    .contenido-porcentaje img {
+        width: 80% !important;
+    }
+
+    .imagen-equipo img {
+        width: 200px !important;
+    }
+
+    .seccion-nosotros p {
+        width: 90% !important;
+    }
+
+    .seccion-boletin {
+        min-height: auto !important;
+        padding: 40px 0;
+        flex-direction: column-reverse;
+    }
+
+    .contenido-boletin {
+        margin-left: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    .seccion-contacto .boton-contacto {
+        width: 60% !important;
+    }
+
+    hr {
+        margin-left: 5% !important;
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2,
+    .contenido-boletin h2,
+    .seccion-nosotros h2,
+    .seccion-contacto h2 {
+        font-size: 1.5em !important;
+    }
+
+    .contenido-inicio p,
+    .contenido-ayuda p,
+    .contenido-equipo p,
+    .contenido-prueba p,
+    .contenido-boletin p {
+        font-size: 0.8em !important;
+    }
+
+    .imagen-inicio img {
+        width: 180px !important;
+    }
+
+    .imagen-equipo img {
+        width: 180px !important;
+    }
+
+    .formulario-boletin {
+        padding: 20px !important;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+    .logo img,
+    .logo-pie img,
+    .enlaces-sociales img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .encabezado {
+        padding: 10px;
+    }
+
+    .seccion-inicio,
+    .seccion-ayuda,
+    .seccion-equipo {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2 {
+        font-size: 2em !important;
+    }
+
+    .seccion-estadisticas,
+    .seccion-porcentaje {
+        min-height: 300px;
+    }
+
+    .seccion-boletin {
+        min-height: auto;
+        padding: 30px 0;
+    }
+}
+
+@media print {
+    .encabezado,
+    .pie-pagina,
+    .seccion-boletin,
+    .seccion-contacto .boton-contacto {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .contenido-inicio h2,
+    .contenido-ayuda h2,
+    .contenido-equipo h2,
+    .contenido-prueba h2 {
+        color: #000 !important;
+        font-size: 16pt !important;
+    }
+}
